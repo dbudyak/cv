@@ -14,11 +14,9 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-	      BoldFont = Fontin-Bold.otf,
-	      ItalicFont = Fontin-Italic.otf
-	      ]
+\setmainfont[SmallCapsFont = Fontin-SmallCaps.otf,
+	            BoldFont = Fontin-Bold.otf,
+	            ItalicFont = Fontin-Italic.otf]
 {Fontin.otf}
 
 
@@ -29,7 +27,7 @@ SmallCapsFont = Fontin-SmallCaps.otf,
 
 \usepackage[absolute]{textpos}
 
-\setlength{\TPHorizModule}{30mm}
+\setlength{\TPHorizModule}{20mm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
@@ -37,58 +35,59 @@ SmallCapsFont = Fontin-SmallCaps.otf,
 \begin{document}
 
 \pagestyle{empty}
-
 \font\fb=''[cmr10]''
-
 \par{\centering
 	{\Huge Dmitry \textsc{Budyak}
 	}\bigskip\par}
 
 \section{Personal Data}
+	\begin{tabular}{rl}
+	\textsc{Date of Birth:} &  26 April 1990 \\
+      	\textsc{Address:}   & Dibunovskaya st. 37/597, 197183, Saint-Petersburg, Russia \\
+	\textsc{Phone:}     & +7 981 8330844 \\
+	\textsc{email:}     & \href{mailto:dmitry.budyak@gmail.com}{dmitry.budyak@gmail.com}
+	\end{tabular}
 
-\begin{tabular}{rl}
-\textsc{Date of Birth:} &  26 April 1990 \\
-		\textsc{Address:}   & Dibunovskaya st. 37/597, 197183, Saint-Petersburg, Russia \\
-		\textsc{Phone:}     & +7 981 8330844 \\
-		\textsc{email:}     & \href{mailto:dmitry.budyak@gmail.com}{dmitry.budyak@gmail.com}
+\section{Work Experience}
+	\begin{tabular}{r|p{11cm}}
+	  \emph{Current} & Software Developer at 
+	  \textsc{Oracle Development SPB} \\
+	  \textsc{Dec 2013}&\emph{Internet of Things Platform Quality}\\&\footnotesize{Functional tests development, writing test specifications, contributing to test framework. Code review and interaction with developers.}\\
+	    \multicolumn{2}{c}{} \\
+		\textsc{Aug 2013} & Android Software Developer at 
+		\textsc{OOO AjTi++}, Saint-Petersburg \\
+		\textsc{Sep 2012}&\emph{Social applications development}\\&\footnotesize{Development of social applications for creating and sharing photo content.}\\
+		  \multicolumn{2}{c}{} \\
+		\textsc{Jul 2010} & Software developer at 
+		\textsc{OOO Nash Rayon}, Saint-Petersburg \\
+		\textsc{Jun 2010}&\emph{Web development}\\&\footnotesize{Website support: ajax, jquery, html}\\
+		  \multicolumn{2}{c}{} \\
+		\textsc{Mar 2008} & System administrator assisant at 
+		\textsc{OAO Staleprokatnyj zavod}\\
+		\textsc{Sep 2007}&\footnotesize{Network administration, hardware support, etc.}
 		\end{tabular}
 
-		\section{Work Experience}
-		\begin{tabular}{r|p{11cm}}
-		\emph{Current} & Software Developer 2 at \textsc{Oracle Development SPB} \\\textsc{Dec 2013}&\emph{Internet of Things Platform Quality}\\&\footnotesize{Functional tests development, writing test specifications, contributing to test framework. Code review and interaction with developers.}\\\multicolumn{2}{c}{} \\
-
-		\textsc{Aug 2013} & Android Software Developer at \textsc{OOO AjTi++}, Saint-Petersburg \\\textsc{Sep 2012}&\emph{Social applications development}\\&\footnotesize{Development of social applications for creating and sharing photo content.}\\\multicolumn{2}{c}{} \\
-
-		\textsc{Jul 2010} & Software developer at \textsc{OOO Nash Rayon}, Saint-Petersburg \\\textsc{Jun 2010}&\emph{Web development}\\&\footnotesize{Website support: ajax, jquery, html}\\\multicolumn{2}{c}{} \\
-
-		\textsc{Mar 2008} & System administrator assisant at \textsc{OAO Staleprokatnyj zavod}\\\textsc{Sep 2007}&\footnotesize{Network administration, hardware support, etc.}
-
-
-		\end{tabular}
-
-		\section{Education}
-		\begin{tabular}{rl}	
-		\textsc{July} 2014 & Master of \textsc{Applied mathematics and informatics} \\& \textbf{National Research University of Information Technologies, Mechanics and Optics}\\& Saint-Petersburg\\
+\section{Education}
+	\begin{tabular}{rl}	
+	  \textsc{July} 2014 & Master of \textbf{Applied mathematics and informatics} \\& \textsc{National Research University of Information Technologies, Mechanics and Optics}\\& Saint-Petersburg\\\\
 			& Thesis of diploma: ``Computer modelling of quantum-optics networks''\\&
 			Development of JavaFX application for modelling quantum-optics networks \\&and simulate some computation.
-			\end{tabular}
+	\end{tabular}
 
-			\section{Languages}
-			\begin{tabular}{rl}
-			\textsc{Russian:}&Mothertongue\\
-				\textsc{English:}&Pre-Intermediate\\
-				\end{tabular}
+\section{Languages}
+	\begin{tabular}{rl}
+		\textsc{Russian:}&Mothertongue\\
+		\textsc{English:}&Pre-Intermediate\\
+	\end{tabular}
 
-				\section{Computer Skills}
-				\begin{tabular}{rl}
-				Basic Knowledge:& Gradle, ANT, MS SQL, OSGi, JavaFX, MatLAB/Octave, Java EE \\
-					Intermediate Knowledge:& Java SE 6/7/8, Java ME, Bash, Git, Haskell, Android SDK \\
-					Other:& Linux, Gentoo, Ubuntu, Arduino, 3D Studio MAX
-					\end{tabular}
+\section{Computer Skills}
+	\begin{tabular}{rl}
+		Basic Knowledge:& Gradle, ANT, MS SQL, OSGi, Java EE, JavaFX, MatLAB/Octave, Math, Statistics \\
+		Intermediate Knowledge:& Java SE 6/7/8, Java ME, Bash, Git, Haskell, Android SDK \\
+		Other:& Linux, Gentoo, Ubuntu, Arduino, 3D Studio MAX
+	\end{tabular}
 
-					\section{Interests and Activities}
-					Science, IT, Technology, Open-Source, Programming, Mathematics \\
-						Psychology, Trekking, Video games, Sci-Fi 
-
+\section{Interests and Activities}
+	Science, IT, Technology, Open-Source, Programming, Mathematics \\
+	Psychology, Trekking, Video games, Sci-Fi 
 \end{document}
-
