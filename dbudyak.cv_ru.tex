@@ -1,0 +1,108 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[cm-default]{fontspec}
+
+\usepackage{marvosym}
+\usepackage{fontspec} 				
+\usepackage{xunicode,xltxtra,url,parskip}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				
+\usepackage{supertabular} 				
+\usepackage{titlesec}					
+\usepackage{hyperref}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Days.otf,BoldFont = EtelkaMed.otf,ItalicFont = Blogger.ttf]{MetaPro.otf}
+
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\hyphenation{im-pre-se}
+
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{20mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{empty}
+\par{\centering
+	\Huge \textsc{Дмитрий Будяк}
+	}\bigskip\par
+
+\section{Персональные данные}
+	\begin{tabular}{rl}
+	\textsc{День рождения:} &  26 Апреля 1990 \\
+	\textsc{Моб. телефон:}     & +7 981 8330844 \\
+	\textsc{Email:}     & \href{mailto:dmitry.budyak@gmail.com}{dmitry.budyak@gmail.com} \\
+	\textsc{LinkedIn:} & \href{http://ru.linkedin.com/in/dmitrybudyak}{http://ru.linkedin.com/in/dmitrybudyak}
+	\end{tabular}
+
+\section{Опыт работы}
+	\begin{tabular}{r|p{11cm}}
+	  \textsc{Сейчас} & \textsc{Oracle Development SPB} \\ & \emph{QA инженер} \\
+	  \textsc{Дек 2013}&\textbf{Internet of Things Platform}\\&
+	  %\footnotesize{
+	  \begin{itemize}
+	  	\item Сперва работал в отделе тестирования Java ME. В задачи входили прогоны тестов на различных платформах с помощью JT Harness, настройки тестовых конфигураций, написание мидлетов для работы с сенсорами устройств с помощью Java ME. 
+		\item Через полгода присоединился к команде тестирования IoT.
+		\item Разрабатывал функциональные тесты для тестирования Gateway-части платформы, также участвуя в разработке тестового фреймворка.
+		\item В ходе работы активно использовал возможности Java 8, знакомился с Git и Gradle.
+		\item Использовал собыйтийно-ориентированные методы для разработки тестов.
+		\item Научился работать с OSGi-контейнерами, такими как Prosyst и Felix.
+		\item Писал Test Design Specifications для функциональных тестов.
+		\item Проводил ручное тестирование Gateway c помощью bluetooth-устройств, подключенных к платформам Raspberry Pi и IMX Sabrelite.
+		\item Писал скрипты на Bash для автоматизирования повседневных задач.
+		\item В данный момент продолжаю работать над тестовым фреймворком и разработкой функциональных тестов.
+	\end{itemize}
+	  %}
+	  \\
+	    \multicolumn{2}{c}{} \\
+		\textsc{Авг 2013}& \textsc{OOO ``Айти++''}\\&\emph{Андроид разработчик} \\
+		\textsc{Сен 2012}& Разработка медийных приложений и их интеграция с социальными сервисами.\\
+		  \multicolumn{2}{c}{} \\
+		\textsc{Июль 2010} & 	\textsc{OOO ``Наш район''}\\&\emph{Программист} \\
+		\textsc{Июнь 2010}& Поддержка работы веб-сайта на ajax, jquery, php.\\
+		  \multicolumn{2}{c}{} \\
+		\textsc{Март 2008} & 	\textsc{OAO ``Сталепрокатный завод''}\\&\emph{Помощник системного администратора}\\
+		\textsc{Сент 2007}&Администрирование корпоративной сети, сервера и пользовательских хостов.
+		\end{tabular}
+
+\section{Образование}
+	\begin{tabular}{rl}	
+	  \textsc{Июль 2014} & Магистр \textbf{Прикладной математики и информатики} в \\& \textsc{СПБНИУ ИТМО}\\
+			& Тема диплома: ``Компьютерное моделирование квантовых оптических сетей''\\&
+			Разработка приложения на JavaFX, позволяющего моделировать квантовые\\& схемы с помощью оптических элементов.
+	\end{tabular}
+
+\section{Языки}
+	\begin{tabular}{rl}
+		\textsc{Русский:}&Родной\\
+		\textsc{Английский:}&Pre-Intermediate\\
+	\end{tabular}
+
+\section{Навыки}
+	\begin{tabular}{rl}
+		Билд-системы: ANT, Gradle \\
+		Системы контроля версий: SVN, Git \\
+		Языки: Java SE 6/7/8, Haskell \\
+		Скриптовые языки: bash \\ 
+		Инструменты: R, Octave \\
+		Рабочее окружение: Gentoo Linux \\
+		Также: JavaFX, MS SQL, Java ME, Android SDK
+	\end{tabular}
+
+\section{Интересы и увлечения}
+	ИТ, технологии, свободное ПО, Gentoo, Java, математика, квантовые компьютеры,
+	психология, походы, sci-fi, роликовые коньки. 
+\end{document}
