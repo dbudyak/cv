@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage[cm-default]{fontspec}
-
+\usepackage{hyperref}
 \usepackage{marvosym}
 \usepackage{fontspec} 				
 \usepackage{xunicode,xltxtra,url,parskip}
@@ -43,69 +43,66 @@
 	}\bigskip\par
 
 \section{Personal}
-	\begin{tabular}{rl}
-	\textsc{Birth-day:} &  26 April 1990 \\
-	\textsc{Mobile:}     & +7 981 8330844 \\
-	\textsc{Email:}     & \href{mailto:dmitry.budyak@gmail.com}{dmitry.budyak@gmail.com} \\
-	\textsc{LinkedIn:} & \href{http://ru.linkedin.com/in/dmitrybudyak}{http://ru.linkedin.com/in/dmitrybudyak}
+	\begin{tabular}{ll}
+	\textsc{Email:}     	& \href{mailto:dmitry.budyak@gmail.com}{dmitry.budyak@gmail.com} \\
+	\textsc{LinkedIn:} 	& \href{http://ru.linkedin.com/in/dmitrybudyak}{http://ru.linkedin.com/in/dmitrybudyak} \\
+	\textsc{Github:}	& \href{https://github.com/dbudyak}{https://github.com/dbudyak} \\
+	\textsc{Mobile:}     	& +7 981 8330844
 	\end{tabular}
 
 \section{Experience}
 	\begin{tabular}{r|p{11cm}}
+                \multicolumn{2}{c}{} \\
+		        \texttt{Current} &     \textsc{Okko}\\&                    	\emph{Android developer} \\
+			\texttt{Jul 2016} & 	Support and improvement of existing Android application. Started development of new version for Android TV. \href{https://play.google.com/store/apps/details?id=ru.more.play}{see}\\
 		\multicolumn{2}{c}{} \\
-			\textsc{Current}&	\textsc{OOO Liga Stavok}\\&			\emph{Software Developer} \\
-			\textsc{May 2015}& Developing of server-side backend for distributed gambling system.\\
+			\texttt{Jun 2016} &	\textsc{OOO Liga Stavok}\\&		\emph{Software Developer} \\
+			\texttt{May 2015} & 	Contributing to part of backend which depended on parsing data from distributed gambling system. Working with Java EE, ORM Hibernate, Play Framework 2\\
 		\multicolumn{2}{c}{} \\
-			\textsc{May 2015} & 	\textsc{Oracle Development SPB} \\ & 	\emph{QA engineer} \\
-	  		\textsc{Dec 2013} & 	\textbf{Internet of Things Platform}\\ &
-			\begin{itemize}
-	  			\item First half year worked in Java ME SQE Team. Tests execution in JT Harness, hardware configuration (Qualcomm Orion, Raspberry Pi), Java ME midlets development for hardware sensors testing.
-				\item After that, in June 2014 joined to IoT Team.
-				\item Functional tests development for Gateway part of Internet of Things platform, contibuting for own test framework.
-				\item Working with Gradle in multimodule project. Intensive usage of Git. Code review in Atlassian Stash.
-				\item Usage of event-driven concept for test development due specific project architecture.
-				\item Swimming with platform bundles in Felix and Prosyst OSGi containers.
-				\item Writting test design specifications.
-				\item Manual testing including bluetooth devices paired with Raspberry Pi B+ and IMX6 Sabrelite.
-				\item Scripting in  Bash for automation tasks.
-			\end{itemize}\\
+			\texttt{May 2015} & 	\textsc{Oracle Development SPB} \\ & 	\emph{QA engineer} \textbf{Internet of Things Platform} \\
+	  		\texttt{Dec 2013} & 	
+	  			First half year worked in Java ME SQE Team. Tests execution in JT Harness, hardware configuration (Qualcomm Orion, Raspberry Pi), Java ME midlets development for hardware sensors testing. After that, in June 2014 joined to IoT Team.
+				Functional tests development for Gateway part of Internet of Things platform, contibuting to own test framework. 
+				Usage of event-driven concept for test development due specific project architecture. 
+				Writing test design specifications. 
+				Scripting in bash for daily tasks automation. \\
 		\multicolumn{2}{c}{} \\
-			\textsc{Aug 2013}&	\textsc{OOO IT++}\\&			\emph{Android developer} \\
-			\textsc{Sep 2012}& Developing of social media android applications.\\
+			\texttt{Aug 2013} &	\textsc{OOO IT++}\\&			\emph{Android developer} \\
+			\texttt{Sep 2012} & Development of social applications with media content. \href{https://play.google.com/store/apps/dev?id=7316137962324369721}{see}\\
 		\multicolumn{2}{c}{} \\
-			\textsc{Jul 2010} & 	\textsc{OOO Nash Rajon}\\&		\emph{Web Programmer} \\
-			\textsc{Jun 2010} & Web portal support: ajax, jquery, php.\\
+			\texttt{Jul 2010} & 	\textsc{OOO Nash Rajon}\\&		\emph{Web Programmer} \\
+			\texttt{Jun 2010} & Web portal support: ajax, jquery, php.\\
 		\multicolumn{2}{c}{} \\
-			\textsc{Mar 2008} & 	\textsc{OAO Staleprokatnyj zavod}\\&	\emph{System administrator assisant}\\
-			\textsc{Sen 2007}& Network administration, hardware support, etc.
+			\texttt{Mar 2008} & 	\textsc{OAO Staleprokatnyj zavod}\\&	\emph{System administrator assisant}\\
+			\texttt{Sen 2007} & Network administration, hardware support, etc.
 	\end{tabular}
 \section{Education}
 	\begin{tabular}{rl}	
 	  \textsc{Jul 2014} & Master of Science \textbf{ Applied Math and Computer Science} \\& \textsc{ITMO University}\\
 			& Thesis: ``Computer modelling for optical quantum circuits''\\&
-			Developed a program for modelling and simulation quantum logic circuits.
+			Development of a program for modelling and simulating of quantum logic circuits.
 	\end{tabular}
 
 \section{Languages}
-	\begin{tabular}{rl}
+	\begin{tabular}{ll}
 		\textsc{Russian:}&Native\\
 		\textsc{English:}&Pre-Intermediate\\
 	\end{tabular}
 
 \section{Skills}
-	\begin{tabular}{rl}
-		Build systems: ANT, Gradle \\
-		CVS: SVN, Git \\
-		Langs: Java SE 6/7/8, Haskell \\
-		Scripting: bash \\ 
-		Instruments: R, Octave \\
-		Testing: TestNG, Selenium \\
-		Environment: Gentoo Linux \\
-		IDE: IntelliJ Idea, Netbeans, vim \\
-		also: JavaFX, Swing, MS SQL, Java ME, Android SDK
+	\begin{tabular}{ll}
+		\multicolumn{2}{c}{} \\
+			Build systems: 	& gradle, maven, ant \\
+			CVS: 		& git, mercurial \\
+			Langs: 		& Java SE 6/7/8, Haskell (pre-junior level)\\
+			Scripting: 	& bash \\ 
+			Testing: 	& JUnit, TestNG, Selenium \\
+			Environment: 	& Gentoo Linux \\
+			IDE: 		& IntelliJ Idea, vim \\
+			also: 		& JavaFX, Swing, SQL, Java ME, Android SDK
 	\end{tabular}
 
 \section{Hobbies}
-	IT, technologies, open software, Gentoo, Java, mathematics, chess, quantum computers, cosmology,
+	IT, technologies, open software, Gentoo, Java, mathematics, chess, quantum computers, astronomy, 
 	psychology, trekking, sci-fi, rollerblades. 
 \end{document}
